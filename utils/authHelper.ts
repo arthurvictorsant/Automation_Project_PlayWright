@@ -20,8 +20,8 @@ export class AuthHelper {
 
   static async loginAndGoToProducts(
     page: Page,
-    email: string = 'testuser@example.com',
-    password: string = 'password123'
+    email: string = 'emaildaautomacaoplaywrightprogit',
+    password: string = 'Senha@123'
   ) {
     await this.login(page, email, password);
     

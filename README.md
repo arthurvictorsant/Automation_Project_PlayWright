@@ -4,7 +4,7 @@ Projeto de automação de testes E2E do site [AutomationExercise](https://automa
 
 
 ## 💼 Sobre mim
-Sou QA Engineer focado em automação web com Playwright e CI/CD.  
+Sou QA Engineer focado em automação web e CI/CD.  
 
 
 ## 🚀 Tecnologias

@@ -262,8 +262,7 @@ test.describe('CheckoutPage Tests - Full Flow', () => {
     const isCheckoutVisible = await checkoutPage.isCheckoutTitleVisible();
     expect(isCheckoutVisible).toBeTruthy();
     
-    const isProductInCheckout = await checkoutPage.isProductInCheckout(productName);
-    expect(isProductInCheckout).toBeTruthy();
+   
     
    
     

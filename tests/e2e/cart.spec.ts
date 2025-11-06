@@ -22,9 +22,11 @@ test.describe('CartPage Tests - With Login', () => {
 
   test('Should display empty cart initially', async ({ page }) => {
     
+
+   await homePage.goToCart();
+
     await CartHelper.clearCart(page);
 
-    await homePage.goToCart();
 
     const isEmpty = await cartPage.isCartEmpty();
     expect(isEmpty).toBeTruthy();
@@ -61,7 +63,10 @@ test.describe('CartPage Tests - With Login', () => {
     expect(cartProductPrice).toBe(productPrice);
   });
 
-  test('Should add multiple products to cart', async () => {
+  test('Should add multiple products to cart', async ({ page }) => {
+    
+    await CartHelper.clearCart(page);
+
     await homePage.goToProducts();
     
     await productsPage.addMultipleProductsToCart([0, 1, 2]);

@@ -5,7 +5,7 @@ import { LoginPage } from '../pages/LoginPage';
 export class AuthHelper {
   static async login(
     page: Page, 
-    email: string = 'emaildaautomacaoplaywrightprogit', 
+    email: string = 'emaildaautomacaoplaywrightprogit@yopmail.com', 
     password: string = 'Senha@123'
   ) {
     const homePage = new HomePage(page);
@@ -20,7 +20,7 @@ export class AuthHelper {
 
   static async loginAndGoToProducts(
     page: Page,
-    email: string = 'emaildaautomacaoplaywrightprogit',
+    email: string = 'emaildaautomacaoplaywrightprogit@yopmail.com',
     password: string = 'Senha@123'
   ) {
     await this.login(page, email, password);

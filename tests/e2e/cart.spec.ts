@@ -161,6 +161,7 @@ test.describe('CartPage Tests - With Login', () => {
   });
 
   test('Should proceed to checkout with products in cart', async ({ page }) => {
+    
     await homePage.goToProducts();
     await productsPage.addProductToCartByIndex(0);
     await productsPage.goToCartFromModal();

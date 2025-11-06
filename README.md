@@ -65,25 +65,6 @@ npx playwright install
 ### Comandos Básicos
 
 ```bash
-# Rodar todos os testes
-npm test
-
-# Rodar todos os testes em modo headed (com interface gráfica)
-npm run test:headed
-
-# Rodar testes em modo UI (interface interativa)
-npm run test:ui
-
-# Rodar testes em modo debug
-npm run test:debug
-
-# Ver relatório dos testes
-npm run report
-```
-
-### Comandos Específicos
-
-```bash
 # Rodar testes de uma suite específica
 npx playwright test home.spec.ts
 npx playwright test login.spec.ts

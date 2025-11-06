@@ -83,6 +83,32 @@ npx playwright test --project=webkit
 npx playwright test --trace on
 ```
 
+🎥 Gravação de Vídeos e Relatórios
+✅ O projeto está configurado para:
+
+Gravar vídeo de todos os testes (video: 'on')
+
+Capturar screenshots
+
+Gerar trace para análise detalhada
+
+Gerar relatórios automáticos (Allure + HTML)
+
+📊 Comandos de relatório
+# Executa testes e gera resultados para o Allure
+npm run test:allure
+
+# Gera e abre o relatório Allure no navegador
+npm run allure:serve
+
+# Gera relatório HTML padrão
+npx playwright show-report
+
+
+Após rodar os testes, os vídeos ficam salvos em:
+
+/test-results/<nome-do-teste>/video.webm
+
 ## 📄 Page Objects Criados
 
 ### BasePage

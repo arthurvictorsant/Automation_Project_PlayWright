@@ -3,6 +3,8 @@ import { CartPage } from '../../pages/CartPage';
 import { ProductsPage } from '../../pages/ProductsPage';
 import { HomePage } from '../../pages/HomePage';
 import { AuthHelper } from '../../utils/authHelper';
+import { CartHelper } from '../../utils/cartHelper';
+
 
 test.describe('CartPage Tests - With Login', () => {
   let cartPage: CartPage;
@@ -15,9 +17,13 @@ test.describe('CartPage Tests - With Login', () => {
     homePage = new HomePage(page);
     
     await AuthHelper.login(page);
+
   });
 
   test('Should display empty cart initially', async ({ page }) => {
+    
+    await CartHelper.clearCart(page);
+
     await homePage.goToCart();
 
     const isEmpty = await cartPage.isCartEmpty();
@@ -76,7 +82,10 @@ test.describe('CartPage Tests - With Login', () => {
     expect(isInCart).toBeTruthy();
   });
 
-  test('Should remove product from cart by index', async () => {
+  test('Should remove product from cart by index', async ({ page }) => {
+    
+    await CartHelper.clearCart(page);
+
     await homePage.goToProducts();
     await productsPage.addProductToCartByIndex(0);
     await productsPage.goToCartFromModal();
@@ -103,7 +112,10 @@ test.describe('CartPage Tests - With Login', () => {
     expect(isInCart).toBeFalsy();
   });
 
-  test('Should remove all products from cart', async () => {
+  test('Should remove all products from cart', async ({ page }) => {
+    await CartHelper.clearCart(page);
+ 
+    
     await homePage.goToProducts();
     await productsPage.addMultipleProductsToCart([0, 1, 2]);
     await homePage.goToCart();
@@ -136,7 +148,10 @@ test.describe('CartPage Tests - With Login', () => {
     console.log('Product in cart:', allProducts[0]);
   });
 
-  test('Should verify product quantity and total', async () => {
+  test('Should verify product quantity and total', async ({ page }) => {
+    await CartHelper.clearCart(page);
+
+    
     await homePage.goToProducts();
     await productsPage.addProductToCartByIndex(0);
     await productsPage.goToCartFromModal();
@@ -203,6 +218,9 @@ test.describe('CartPage Tests - With Login', () => {
   });
 
   test('Should maintain cart after logout and login', async ({ page }) => {
+    
+    await CartHelper.clearCart(page);
+
     await homePage.goToProducts();
     await productsPage.addProductToCartByIndex(0);
     await productsPage.goToCartFromModal();

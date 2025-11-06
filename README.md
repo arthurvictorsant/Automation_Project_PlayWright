@@ -267,12 +267,6 @@ npx playwright codegen https://automationexercise.com
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/)
 - [Page Object Model Pattern](https://playwright.dev/docs/pom)
 
-## 🤝 Contribuindo
-
-1. Crie um branch para sua feature (`git checkout -b feature/NovaFuncionalidade`)
-2. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
-3. Push para o branch (`git push origin feature/NovaFuncionalidade`)
-4. Abra um Pull Request
 
 ## ✅ Status do Projeto
 
@@ -287,10 +281,5 @@ npx playwright codegen https://automationexercise.com
 - [ ] ContactUsPage
 - [ ] ProductDetailPage
 
-## 📄 Licença
-
-Este projeto foi criado para fins educacionais.
-
----
 
 **Desenvolvido com ❤️ usando Playwright + TypeScript**

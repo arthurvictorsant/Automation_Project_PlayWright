@@ -2,6 +2,11 @@
 
 Projeto de automação de testes E2E do site [AutomationExercise](https://automationexercise.com) utilizando Playwright com TypeScript e o padrão Page Object Model (POM).
 
+
+## 💼 Sobre mim
+Sou QA Engineer focado em automação web com Playwright e CI/CD.  
+
+
 ## 🚀 Tecnologias
 
 - **[Playwright](https://playwright.dev/)** - Framework de automação E2E
@@ -266,20 +271,6 @@ npx playwright codegen https://automationexercise.com
 - [Playwright Best Practices](https://playwright.dev/docs/best-practices)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/)
 - [Page Object Model Pattern](https://playwright.dev/docs/pom)
-
-
-## ✅ Status do Projeto
-
-- [x] BasePage criada
-- [x] HomePage implementada e testada
-- [x] LoginPage implementada e testada
-- [x] ProductsPage implementada e testada
-- [x] CartPage implementada e testada
-- [x] AuthHelper criado
-- [ ] SignupPage
-- [ ] CheckoutPage
-- [ ] ContactUsPage
-- [ ] ProductDetailPage
 
 
 **Desenvolvido com ❤️ usando Playwright + TypeScript**

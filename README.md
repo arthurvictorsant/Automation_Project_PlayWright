@@ -65,25 +65,6 @@ npx playwright install
 ### Comandos Básicos
 
 ```bash
-# Rodar todos os testes
-npm test
-
-# Rodar todos os testes em modo headed (com interface gráfica)
-npm run test:headed
-
-# Rodar testes em modo UI (interface interativa)
-npm run test:ui
-
-# Rodar testes em modo debug
-npm run test:debug
-
-# Ver relatório dos testes
-npm run report
-```
-
-### Comandos Específicos
-
-```bash
 # Rodar testes de uma suite específica
 npx playwright test home.spec.ts
 npx playwright test login.spec.ts
@@ -101,6 +82,32 @@ npx playwright test --project=webkit
 # Rodar testes com trace
 npx playwright test --trace on
 ```
+
+🎥 Gravação de Vídeos e Relatórios
+✅ O projeto está configurado para:
+
+Gravar vídeo de todos os testes (video: 'on')
+
+Capturar screenshots
+
+Gerar trace para análise detalhada
+
+Gerar relatórios automáticos (Allure + HTML)
+
+📊 Comandos de relatório
+# Executa testes e gera resultados para o Allure
+npm run test:allure
+
+# Gera e abre o relatório Allure no navegador
+npm run allure:serve
+
+# Gera relatório HTML padrão
+npx playwright show-report
+
+
+Após rodar os testes, os vídeos ficam salvos em:
+
+/test-results/<nome-do-teste>/video.webm
 
 ## 📄 Page Objects Criados
 

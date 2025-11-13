@@ -3,18 +3,18 @@
 Projeto de automação de testes E2E do site [AutomationExercise](https://automationexercise.com) utilizando Playwright com TypeScript e o padrão Page Object Model (POM).
 
 
-## 💼 Sobre mim
+##  Sobre mim
 Sou QA Engineer focado em automação web e CI/CD.  
 
 
-## 🚀 Tecnologias
+##  Tecnologias
 
 - **[Playwright](https://playwright.dev/)** - Framework de automação E2E
 - **[TypeScript](https://www.typescriptlang.org/)** - Linguagem de programação
 - **Node.js** - Runtime JavaScript
 - **Page Object Model** - Padrão de design para organização de testes
 
-## 📁 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 automation-exercise/
@@ -37,12 +37,12 @@ automation-exercise/
 └── package.json
 ```
 
-## 📋 Pré-requisitos
+##  Pré-requisitos
 
 - Node.js (versão 16 ou superior)
 - npm ou yarn
 
-## 🔧 Instalação
+##  Instalação
 
 1. Clone o repositório:
 ```bash
@@ -60,7 +60,7 @@ npm install
 npx playwright install
 ```
 
-## ▶️ Executando os Testes
+##  Executando os Testes
 
 ### Comandos Básicos
 
@@ -83,8 +83,8 @@ npx playwright test --project=webkit
 npx playwright test --trace on
 ```
 
-🎥 Gravação de Vídeos e Relatórios
-✅ O projeto está configurado para:
+ Gravação de Vídeos e Relatórios
+ O projeto está configurado para:
 
 Gravar vídeo de todos os testes (video: 'on')
 
@@ -94,7 +94,7 @@ Gerar trace para análise detalhada
 
 Gerar relatórios automáticos (Allure + HTML)
 
-📊 Comandos de relatório
+ Comandos de relatório
 # Executa testes e gera resultados para o Allure
 npm run test:allure
 
@@ -109,7 +109,7 @@ Após rodar os testes, os vídeos ficam salvos em:
 
 /test-results/<nome-do-teste>/video.webm
 
-## 📄 Page Objects Criados
+##  Page Objects Criados
 
 ### BasePage
 Classe base contendo métodos comuns reutilizáveis:
@@ -154,7 +154,7 @@ Página do carrinho de compras:
 - Proceed to checkout
 - Verificar se carrinho está vazio
 
-## 🔐 Autenticação
+##  Autenticação
 
 O projeto utiliza um helper de autenticação (`AuthHelper`) para facilitar o login nos testes:
 
@@ -171,7 +171,7 @@ await AuthHelper.login(page, 'custom@email.com', 'password123');
 await AuthHelper.loginAndGoToProducts(page);
 ```
 
-## 📝 Exemplo de Teste
+##  Exemplo de Teste
 
 ```typescript
 import { test, expect } from '@playwright/test';
@@ -200,7 +200,7 @@ test.describe('Cart Tests', () => {
 });
 ```
 
-## 🎯 Padrões e Boas Práticas
+##  Padrões e Boas Práticas
 
 ### Page Object Model (POM)
 - Cada página do site tem sua própria classe
@@ -227,7 +227,7 @@ test.describe('Cart Tests', () => {
 - Testes independentes e isolados
 - Nomes descritivos que explicam o comportamento esperado
 
-## 🛠️ Configuração
+##  Configuração
 
 ### playwright.config.ts
 - Configurado para rodar em Chromium, Firefox e WebKit
@@ -242,7 +242,7 @@ test.describe('Cart Tests', () => {
 - Module: CommonJS
 - Tipos do Playwright incluídos
 
-## 📊 Relatórios
+##  Relatórios
 
 Após executar os testes, você pode visualizar o relatório HTML:
 
@@ -257,7 +257,7 @@ O relatório inclui:
 - Tempo de execução
 - Logs detalhados
 
-## 🐛 Debug
+##  Debug
 
 Para debugar testes, use uma das opções:
 
@@ -272,7 +272,7 @@ npx playwright test --ui
 npx playwright codegen https://automationexercise.com
 ```
 
-## 📚 Recursos Úteis
+##  Recursos Úteis
 
 - [Documentação do Playwright](https://playwright.dev/docs/intro)
 - [Playwright Best Practices](https://playwright.dev/docs/best-practices)
